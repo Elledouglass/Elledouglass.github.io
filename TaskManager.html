@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Task Manager - Personal Productivity Tracker</title>
+  <link rel="stylesheet" href="css/indexStyles.css" />
+  <script src="js/FinalWebsite.js" defer></script>
+</head>
+<body>
+  <nav>
+    <a href="index.html">Home</a>
+    <a href="TaskManager.html">Task Manager</a>
+    <a href="Timer.html">Pomodoro Timer</a>
+  </nav>
+
+  <main>
+    <h1>Task Manager</h1>
+    <p>Organize your tasks, track progress, and stay on top of your goals.</p>
+
+    <!-- Task Adding Form -->
+    <section>
+      <h2>Add a New Task</h2>
+      <form id="task-form">
+        <label for="task-name">Task Name:</label>
+        <input type="text" id="task-name" placeholder="Enter task name" required />
+
+        <br />
+
+        <label>Category:</label>
+        <input type="radio" id="work" name="category" value="Work" /> Work
+        <input type="radio" id="personal" name="category" value="Personal" /> Personal
+        <input type="radio" id="school" name="category" value="School" /> School
+
+        <br />
+
+        <label for="priority">Important:</label>
+        <input type="checkbox" id="priority" />
+
+        <br />
+        <button type="submit">Add Task</button>
+        <button type="reset">Clear</button>
+      </form>
+    </section>
+
+    <!-- Task List / Table -->
+    <section>
+      <h2>Your Tasks</h2>
+      <table id="task-table">
+        <thead>
+          <tr>
+            <th>Task Name</th>
+            <th>Category</th>
+            <th>Priority</th>
+          </tr>
+        </thead>
+        <tbody id="task-table-body">
+
+        </tbody>
+      </table>
+    </section>
+
+    <!-- Sample List of Tips -->
+    <section>
+      <h2>Productivity Tips</h2>
+      <ul>
+        <li>Start your day with the most important task.</li>
+        <li>Use the Pomodoro method for better focus.</li>
+        <li>Break larger tasks into smaller steps.</li>
+      </ul>
+    </section>
+  </main>
+</body>
+</html>
